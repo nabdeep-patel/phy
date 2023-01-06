@@ -137,50 +137,49 @@
           }
 
         }
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
-
+         @import url("https://fonts.googleapis.com/css?family=Bree+Serif");
 .cards-container {
   box-shadow: 0 0 5px -1px;
   color: #555;
 }
-.cards-header {
-    display: flex;
-    box-shadow: 0 1px 5px -2px;
-    font-family: bree serif, serif;
+.cards-container .cards-header {
+  display: flex;
+  box-shadow: 0 1px 5px -2px;
+  font-family: bree serif, serif;
 }
-    .cards-title {
-      margin: 0;
-      font-size: 1.8em;
-      padding: 0.3em 0.5em;
-      flex: 1;
-    }
-
-    .cards-more-option {
-      color: inherit;
-      padding: 0.7em;
-      font-size: 1.2em;
-      flex: content;
-    }
-  }
-
-  .cards-inline {
-    margin: 0;
-    display: flex;
-    list-style: none;
-    white-space: nowrap;
-    user-select: none;
-    overflow-x: auto;
-    padding: 0;
+.cards-container .cards-header .cards-title {
+  margin: 0;
+  font-size: 1.8em;
+  padding: 0.3em 0.5em;
+  flex: 1;
 }
-   
-    .card-item {
-      white-space: normal;
-      margin: 1em 0.3em;
-      min-width: 15em;
-
-      &:first-of-type {
-        margin-left: 1em;
-     }}
+.cards-container .cards-header .cards-more-option {
+  color: inherit;
+  padding: 0.7em;
+  font-size: 1.2em;
+  flex: content;
+}
+.cards-container .cards-inline {
+  margin: 0;
+  display: flex;
+  background-color:white;
+  list-style: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: auto;
+  padding: 0;
+}
+.cards-container .cards-inline .card-item {
+  white-space: normal;
+  margin: 1em 0.3em;
+  min-width: 15em;
+}
+.cards-container .cards-inline .card-item:first-of-type {
+  margin-left: 1em;
+}
 
 .card-item {
   font-family: bree serif, serif;
@@ -193,102 +192,89 @@
   border: 1px solid;
   display: flex;
   flex-direction: column;
-  }
-  &:hover {
-    box-shadow: 0 0 10px -1px ;
-  }
-  
-  .card-heading {
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    padding: 0.5em;
-    text-align: center;
-    box-shadow: 0 1px 1px 0px;
-    font-size: 1.3em;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    font-weight: bold;
-    
-    &:hover {
-      text-shadow: 1px 1px 3px #bbb;
-    }
-  }
-  
-  .card-body {
-    padding: 0 0.5em;
-    font-size: 1em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: inherit;
-    text-decoration: inherit;
-    flex-grow: 1;
-    min-height: 5em;
-    
-    .card-body-image {
-      margin: 0.2em 0;
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      
-      & > img {
-        max-width: 100%;
-        max-height: 12em;
-      }
-    }
-    
-    & > img {
-      max-width: 100%;
-      max-height: 12em;
-      margin: 0.2em 0;
-    }
-    
-    .card-info {
-      text-align: left;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 100%;
-    }
-  }
-  
-  .card-footer {
-    box-shadow: 0 -1px 1px 0px;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    padding: 0.5em 1em;
-    text-align: center;
-    
-    .btn {
-      cursor: pointer;
-      background-color: inherit;
-      border: 1px solid;
-      box-shadow: 1px 1px 1px -1px;
-      margin: 0 0.3em;
-      font-family: inherit;
-      color: inherit;
-      font-size: 1em;
-      padding: 0.3em 0.5em;
-      outline: none;
-      
-      &:hover {
-        box-shadow: 2px 2px 5px -1px;
-      }
-      
-      &:focus {
-        box-shadow: 0 0 3px;
-      }
-    }
-  }
 }
-
-
+.card-item:hover {
+  box-shadow: 0 0 10px -1px;
+}
+.card-item .card-heading {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  padding: 0.5em;
+  text-align: center;
+  box-shadow: 0 1px 1px 0px;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-weight: bold;
+}
+.card-item .card-heading:hover {
+  text-shadow: 1px 1px 3px #bbb;
+}
+.card-item .card-body {
+  padding: 0 0.5em;
+  font-size: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+  text-decoration: inherit;
+  flex-grow: 1;
+  min-height: 5em;
+}
+.card-item .card-body .card-body-image {
+  margin: 0.2em 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.card-item .card-body .card-body-image > img {
+  max-width: 100%;
+  max-height: 12em;
+}
+.card-item .card-body > img {
+  max-width: 100%;
+  max-height: 12em;
+  margin: 0.2em 0;
+}
+.card-item .card-body .card-info {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.card-item .card-footer {
+  box-shadow: 0 -1px 1px 0px;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.card-item .card-footer .btn {
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid;
+  box-shadow: 1px 1px 1px -1px;
+  margin: 0 0.3em;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1em;
+  padding: 0.3em 0.5em;
+  outline: none;
+}
+.card-item .card-footer .btn:hover {
+  box-shadow: 2px 2px 5px -1px;
+}
+.card-item .card-footer .btn:focus {
+  box-shadow: 0 0 3px;
+}
 
 body {
   margin: 0;
 }
+
     </style>
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
   </head>
@@ -301,7 +287,7 @@ body {
         <div class="image w3-round"></div>
         <p class="profession"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">EDU<span style="color: #ffcc66">BOOM</span></span></p>
 <br>
-<p style="color:white;font-family:comic sans ms;font-size:23px"> MATHEMATICAL SCIENCE LECTURES</p>
+<p style="color:white;font-family:comic sans ms;font-size:23px"> MATHEMATICAL PHYSICS LECTURES</p>
 <section class="cards-container">
   <ul class="cards-inline">
     <li class="card-item">
@@ -321,11 +307,14 @@ body {
     
   </ul>
 </section>
+<p style="color:white;font-family:comic sans ms;font-size:23px"> CLASSICAL MECHANICS LECTURES</p>
 
 
 
 
 
+
+<br><br><br>
     </div>
     <script>
       feather.replace()
