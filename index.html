@@ -1,170 +1,306 @@
 
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046269.png">
-    <title>PHYSICAL SCIENCES</title>
-    <style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                          <!DOCTYPE html>                    <html>                        <head>                        <title>Page Title</title>                        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                           
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap');
+body {
+  background: linear-gradient(to right, #2efc17,#34ebae,#34ebe8,#3486eb, #0909ed);
+    margin-top:65px;}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  box-sizing: inherit;
+}
 
-      body {
-        background: #232526;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #2efc17, #0909ed);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #2efc17, #0909ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
 
-        .container {
-          width: 100%;
-          height: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          margin-right: auto;
-          margin-left: auto;
-        }
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
 
-        .image {
-          background-image: url("https://icon-library.com/images/physics-icon/physics-icon-10.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center; 
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          margin: 0 auto;
-          border: 5px solid #fdf5e6;
-        }
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+  opacity: 80.95%;
+    position: fixed;
+    width: 100%;
+    background: #291514;
+    color: white;
+    opacity: 0.85;
+    top:0;
+    z-index: 100;
+  font-family: 'Jost', sans-serif;
+font-family: 'Permanent Marker', cursive;
+}
 
-        a {
-          font-size: large;
-        }
+.navbar-container{
+  
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
 
-        .w3-border {
-          border: 3px solid #ccc !important;
-        }
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+  font-family: arial;
+}
 
-        .links-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 20px;
-        }
+.menu-items li{
+    list-style: none;
+  text-align: center;
+    font-size: 1.3rem;
+  padding-left: 6px;
+  padding-right:4px;
+  
+}
 
-        .links-container a {
-          width: 100%;
-          color: #414345 !important;
-          transition: 0.2s;
-        }
+.navbar a{
+    color: #f4fc03;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
 
-        .links-container a:hover {
-          opacity: 1;
-        }
+.navbar a:hover{
+    color: cyan;
+   font-size:110%;
+  transition: font-size 0.2s ease-in-out;
+}
 
-        .profession {
-          margin-top: 15px !important;
-        }
-
-        .profession span {
-          font-size: 14px;
-        }
-
-        .icons {
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-        }
-
-        .icons a {
-          text-decoration: none;
-        }
-
-        .icons a svg {
-          fill: #fdf5e6 !important;
-          transform: scale(1);
-        }
-
-        .border {
-          border: 3px ridge #fdf5e6;
-        }
-
-        .contact {
-          text-align: center;
-          color: #fdf5e6;
-        }
-
-        .contact .info {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 15px;
-        }
-
-        .contact .info span {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-        }
-
-        .bio {
-          font-size: 11px;
-          text-align: center;
-        }
-
-        @media screen and (min-width: 768px) {
-          .link {
-            width: 100%;
-          }
-
-          a {
-            font-size: x-large;
-          }
-
-        }
-        @media screen and (min-width: 576px) {
-          .container {
-            max-width: 540px;
-          }
-
-          .profession span {
-            font-size: 24px;
-          }
-          
-          .bio {
-            font-size: 15px;
-          }
-
-        }
-
-    </style>
-    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
-  </head>
-  <body>
-    <!-- Content container -->
-    <div class="container">
-
-      <!-- Image and name container -->
-      <div class="w3-margin-top" style="text-align: center">
-        <div class="image w3-round"></div>
-        <p class="profession"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">EDU<span style="color: #ffcc66">BOOM</span></span></p>
-        <p class="bio"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6"></span></p><br>
-      </div>
-
-      <!-- Links section 1 -->
-      <div class="links-container">
-        
-        <a href="books.html" class="w3-button w3-sand w3-hover-pale-green link border" target="_blank">BOOKS</a>
-        <a href="video.html" class="w3-button w3-sand w3-hover-pale-green link border" target="_blank">VIDEOS</a>
-        <a href="exam.html" class="w3-button w3-sand w3-hover-pale-green link border" target="_blank">EXAM</a>
-      </div>
+@media (max-width: 900px){
+    .navbar{
+        opacity: 0.95;
       
-     <br>
+    }
 
-    </div>
-    <script>
-      feather.replace()
-    </script>
-  </body>  
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: white;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: -19% 150%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+      background-color: #07071f;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 2.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+  transform: scaleY(0);}
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 700px){
+    .navbar-container input[type="checkbox"]:checked ~ 
+    }
+}
+  </style>
+    <title>Physical Science</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items" style="color: #f4fc03;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h1 class="logo"><a href="https://www.physicalsciences.ml"><img src="http://www.physicalsciences.ml/picturetopeople.org-542587338a058d288bcf3ae37898ad50e6cdfda36ea62583cb.png"width="200px" height="40px" style="padding-bottom:10px;padding-right:5px;"></img><img src="https://www.pngarts.com/files/3/Science-Free-PNG-Image.png" width="50px" height="50px"></img></a></h1>
+        </div>
+    </nav>
+<img src="https://thumbs.dreamstime.com/b/physics-school-subject-typographic-header-scientist-explore-electricity-magnetism-light-wave-forces-theoretical-practical-195625255.jpg" width="100%" height="20%"></img>
+<p style="background-color:white;color:black;margin-top:-5px;padding:4px;font-size:26px;text-align:justify;padding:14px;font-family: 'Pacifico', cursive;">Motive of creating this website is just to help all of you to understand physics in a better and simpler way. This website aims in delivering physics content to students.<br><br>
+Starting from 9th Standard to BSc Level all content will be provided here.
+  This website will also help you in craking competitve exams such as NTSE, NDA, JEE, NEET, GATE, IIT JAM, SET, NET, CSIR and many more....<br>
+  <br>
+  <a href="#o" style='color: white'><p style="background-color:black;color:white;padding:16px;top:-20px;text-align:center;font-size:20px;font-family:verneda;"><i class='fa fa-arrow-down' style='color: white'></i> Scroll Down and Start Your Learning Now <i class='fa fa-arrow-down' style='color: white'></i></p></a>
+</p>
+  
+
+<div class="wrapper" id="o" style="box-sizing: border-box;-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; max-width: 1000px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 4rem;
+  margin-bottom: 10rem;">
+ <div class="cards"  style="display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 4rem;">
+   <h1 style="font-family: 'Changa', sans-serif;"><center>
+     Material For Class 9th</center> </h1>
+        <div class="card" style="max-width: 500px;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  padding: 3rem 2rem;
+  color: white;
+  justify-self: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);">
+     <div class="card-content" style="height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;">
+            <div class="bottom" style="display: flex;
+    justify-content: space-between;
+    text-align: center; font-size:20px;">
+              <h2><c>Toughening the Mind by Challenging the Body</c></h2>
+             
+            </div>
+          </div>
+          <div class="card-bg" style="position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: -1;">
+            <img
+              class="bg-img"
+                 style="height: 100%;width: 100%;
+  height: auto;
+      object-fit: cover;
+      vertical-align: middle;"
+              src="https://cdn.stocksnap.io/img-thumbs/960w/SKI2T9YF2P.jpg"
+              alt="leafs"
+            />
+          </div>
+          <div class="shadow">
+            <img
+              class="shadow-img"
+                 style="position: absolute;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -15px;
+    z-index: -2;
+    border-radius: 20px;
+    filter: blur(15px);
+    .shadow-img {
+      margin-top: 3rem;
+      object-fit: cover;"
+              src="https://cdn.stocksnap.io/img-thumbs/960w/SKI2T9YF2P.jpg"
+              alt="leafs"
+            />
+          </div>
+        </div>
+</body>
 </html>
