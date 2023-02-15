@@ -1,21 +1,18 @@
 
-
-<!DOCTYPE html>
-  <html>
-    <head>
-      <title>Physical Science</title>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-96f5da14bc71e5883d519b4eb5e93297dde552c2f91a97fcfb30035219cf1c1a.css" />
- 
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-      
-      
-      
-      <link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.5.0/css/all.css&quot; integrity=&quot;sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU&quot; crossorigin=&quot;anonymous&quot;>                                           
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Jost&amp;family=Permanent+Marker&amp;display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Changa:wght@600&amp;display=swap');
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Physical Science</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                           
+  
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap');
 body {
   background: linear-gradient(to right, #2efc17,#34ebae,#34ebe8,#3486eb, #0909ed);
     margin-top:65px;}
@@ -28,7 +25,7 @@ body {
   box-sizing: inherit;
 }
 
-.navbar input[type=&quot;checkbox&quot;],
+.navbar input[type="checkbox"],
 .navbar .hamburger-lines{
     display: none;
 }
@@ -102,7 +99,7 @@ font-family: 'Permanent Marker', cursive;
       
     }
 
-    .navbar-container input[type=&quot;checkbox&quot;],
+    .navbar-container input[type="checkbox"],
     .navbar-container .hamburger-lines{
         display: block;
     }
@@ -113,7 +110,7 @@ font-family: 'Permanent Marker', cursive;
         height: 64px;
     }
 
-    .navbar-container input[type=&quot;checkbox&quot;]{
+    .navbar-container input[type="checkbox"]{
         position: absolute;
         display: block;
         height: 32px;
@@ -187,59 +184,60 @@ font-family: 'Permanent Marker', cursive;
         font-size: 2.5rem;
     }
 
-    .navbar-container input[type=&quot;checkbox&quot;]:checked ~ .menu-items{
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
         transform: translateX(0);
     }
 
-    .navbar-container input[type=&quot;checkbox&quot;]:checked ~ .hamburger-lines .line1{
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
         transform: rotate(45deg);
     }
-.navbar-container input[type=&quot;checkbox&quot;]:checked ~ .hamburger-lines .line2{
+.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
   transform: scaleY(0);}
-    .navbar-container input[type=&quot;checkbox&quot;]:checked ~ .hamburger-lines .line3{
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
     }
 
 }
 
 @media (max-width: 700px){
-    .navbar-container input[type=&quot;checkbox&quot;]:checked ~ 
+    .navbar-container input[type="checkbox"]:checked ~ 
     }
       .myimg1 { display:none;}
       .myimg { display:block;}
 }
   </style>
+    <title>Physical Science</title>
 </head>
 <body>
-    <nav class=&quot;navbar&quot;>
-        <div class=&quot;navbar-container container&quot;>
-            <input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot;>
-            <div class=&quot;hamburger-lines&quot;>
-                <span class=&quot;line line1&quot;></span>
-                <span class=&quot;line line2&quot;></span>
-                <span class=&quot;line line3&quot;></span>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
-            <ul class=&quot;menu-items&quot; style=&quot;color: #f4fc03;&quot;>
-                <li><a href=&quot;#&quot;>Home</a></li>
-                <li><a href=&quot;#&quot;>About</a></li>
-                <li><a href=&quot;#&quot;>Category</a></li>
-                <li><a href=&quot;#&quot;>Menu</a></li>
-                <li><a href=&quot;#&quot;>Testimonial</a></li>
-                <li><a href=&quot;#&quot;>Contact</a></li>
+            <ul class="menu-items" style="color: #f4fc03;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-            <h1 class=&quot;logo&quot;><a href=&quot;https://www.physicalsciences.ml&quot;><img src=&quot;picturetopeople.org-542587338a058d288bcf3ae37898ad50e6cdfda36ea62583cb.png&quot;width=&quot;200px&quot; height=&quot;40px&quot; style=&quot;padding-bottom:10px;padding-right:5px;&quot;></img><img src=&quot;Science-Free-PNG-Image.png&quot; width=&quot;50px&quot; height=&quot;50px&quot;></img></a></h1>
+            <h1 class="logo"><a href="https://www.physicalsciences.ml"><img src="picturetopeople.org-542587338a058d288bcf3ae37898ad50e6cdfda36ea62583cb.png"width="200px" height="40px" style="padding-bottom:10px;padding-right:5px;"></img><img src="Science-Free-PNG-Image.png" width="50px" height="50px"></img></a></h1>
         </div>
     </nav>
-<div class=&quot;myimg&quot;><img src=&quot;https://thumbs.dreamstime.com/b/physics-school-subject-typographic-header-scientist-explore-electricity-magnetism-light-wave-forces-theoretical-practical-195625255.jpg&quot; width=&quot;100%&quot; height=&quot;50%&quot;></img></div>
-<div class=&quot;myimg1&quot;><img src=&quot;https://thumbs.dreamstime.com/b/physics-school-subject-typographic-header-scientist-explore-electricity-magnetism-light-wave-forces-theoretical-practical-195625255.jpg&quot; width=&quot;100%&quot; height=&quot;40%&quot;></img></div><p style=&quot;background-color:white;color:black;margin-top:-5px;padding:4px;font-size:26px;text-align:justify;padding:14px;font-family: 'Pacifico', cursive;&quot;>Motive of creating this website is just to help all of you to understand physics in a better and simpler way. This website aims in delivering physics content to students.<br><br>
+<div class="myimg"><img src="https://thumbs.dreamstime.com/b/physics-school-subject-typographic-header-scientist-explore-electricity-magnetism-light-wave-forces-theoretical-practical-195625255.jpg" width="100%" height="50%"></img></div>
+<div class="myimg1"><img src="https://thumbs.dreamstime.com/b/physics-school-subject-typographic-header-scientist-explore-electricity-magnetism-light-wave-forces-theoretical-practical-195625255.jpg" width="100%" height="40%"></img></div><p style="background-color:white;color:black;margin-top:-5px;padding:4px;font-size:26px;text-align:justify;padding:14px;font-family: 'Pacifico', cursive;">Motive of creating this website is just to help all of you to understand physics in a better and simpler way. This website aims in delivering physics content to students.<br><br>
 Starting from 9th Standard to BSc Level all content will be provided here.
   This website will also help you in craking competitve exams such as NTSE, NDA, JEE, NEET, GATE, IIT JAM, SET, NET, CSIR and many more....<br>
   <br>
-  <a href=&quot;#o&quot; style='color: white'><p style=&quot;background-color:black;color:white;padding:16px;top:-20px;text-align:center;font-size:20px;font-family:verneda;&quot;><i class='fa fa-arrow-down' style='color: white'></i> Scroll Down and Start Your Learning Now <i class='fa fa-arrow-down' style='color: white'></i></p></a>
+  <a href="#o" style='color: white'><p style="background-color:black;color:white;padding:16px;top:-20px;text-align:center;font-size:20px;font-family:verneda;"><i class='fa fa-arrow-down' style='color: white'></i> Scroll Down and Start Your Learning Now <i class='fa fa-arrow-down' style='color: white'></i></p></a>
 </p>
   
 
-<div class=&quot;wrapper&quot; id=&quot;o&quot; style=&quot;box-sizing: border-box;-webkit-font-smoothing: antialiased;
+<div class="wrapper" id="o" style="box-sizing: border-box;-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; max-width: 1000px;
   min-height: 100vh;
   display: flex;
@@ -247,54 +245,54 @@ Starting from 9th Standard to BSc Level all content will be provided here.
   justify-content: center;
   margin: 0 auto;
   padding-top: 4rem;
-  margin-bottom: 10rem;&quot;>
- <div class=&quot;cards&quot;  style=&quot;display: grid;
+  margin-bottom: 10rem;">
+ <div class="cards"  style="display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 4rem;&quot;>
-   <h1 style=&quot;font-family: 'Changa', sans-serif;&quot;><center>
+  grid-gap: 4rem;">
+   <h1 style="font-family: 'Changa', sans-serif;"><center>
      Material For Class 9th</center> </h1>
-        <div class=&quot;card&quot; style=&quot;max-width: 500px;
+        <div class="card" style="max-width: 500px;
   width: 100%;
   height: 250px;
   position: relative;
   padding: 3rem 2rem;
   color: white;
   justify-self: center;
-  transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);&quot;>
-     <div class=&quot;card-content&quot; style=&quot;height: 100%;
+  transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);">
+     <div class="card-content" style="height: 100%;
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    justify-content: space-between;&quot;>
-            <div class=&quot;bottom&quot; style=&quot;display: flex;
+    justify-content: space-between;">
+            <div class="bottom" style="display: flex;
     justify-content: space-between;
-    text-align: center; font-size:20px;&quot;>
+    text-align: center; font-size:20px;">
               <h2><c>Toughening the Mind by Challenging the Body</c></h2>
              
             </div>
           </div>
-          <div class=&quot;card-bg&quot; style=&quot;position: absolute;
+          <div class="card-bg" style="position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     border-radius: 20px;
     overflow: hidden;
-    z-index: -1;&quot;>
+    z-index: -1;">
             <img
-              class=&quot;bg-img&quot;
-                 style=&quot;height: 100%;width: 100%;
+              class="bg-img"
+                 style="height: 100%;width: 100%;
   height: auto;
       object-fit: cover;
-      vertical-align: middle;&quot;
-              src=&quot;https://cdn.stocksnap.io/img-thumbs/960w/SKI2T9YF2P.jpg&quot;
-              alt=&quot;leafs&quot;
+      vertical-align: middle;"
+              src="https://cdn.stocksnap.io/img-thumbs/960w/SKI2T9YF2P.jpg"
+              alt="leafs"
             />
           </div>
-          <div class=&quot;shadow&quot;>
+          <div class="shadow">
             <img
-              class=&quot;shadow-img&quot;
-                 style=&quot;position: absolute;
+              class="shadow-img"
+                 style="position: absolute;
     width: 90%;
     height: 100%;
     overflow: hidden;
@@ -307,25 +305,11 @@ Starting from 9th Standard to BSc Level all content will be provided here.
     filter: blur(15px);
     .shadow-img {
       margin-top: 3rem;
-      object-fit: cover;&quot;
-              src=&quot;https://cdn.stocksnap.io/img-thumbs/960w/SKI2T9YF2P.jpg&quot;
-              alt=&quot;leafs&quot;
+      object-fit: cover;"
+              src="https://cdn.stocksnap.io/img-thumbs/960w/SKI2T9YF2P.jpg"
+              alt="leafs"
             />
           </div>
         </div>
 </body>
 </html>
-  
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.6/react-redux.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.js'></script>
-<script src='https://cdn.jsdelivr.net/redux.logger/3.0.1/index.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js'></script>
-  
-  
-
-</body>
-
-</html>
-
